@@ -1,0 +1,11 @@
+# compilado (va en las versiones de GitHub)
+NeoCalc.exe
+*.old*.exe
+# iconos generados por tema al ejecutar
+iconos/
+# salidas de prueba
+prueba/*.png
+prueba/*.txt
+prueba/*.exe
+# temas exportados del usuario
+*.neocalc.json

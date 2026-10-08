@@ -1,0 +1,126 @@
+es | en | pt | fr | de | it | pl | ru | ko | ja
+Entrada no válida | Invalid input | Entrada inválida | Entrée non valide | Ungültige Eingabe | Input non valido | Nieprawidłowe dane | Недопустимый ввод | 잘못된 입력 | 無効な入力です
+No se puede dividir por cero | Cannot divide by zero | Não é possível dividir por zero | Impossible de diviser par zéro | Division durch null nicht möglich | Impossibile dividere per zero | Nie można dzielić przez zero | Деление на ноль невозможно | 0으로 나눌 수 없습니다 | 0 で割ることはできません
+Desbordamiento | Overflow | Estouro | Dépassement de capacité | Überlauf | Overflow | Przepełnienie | Переполнение | 오버플로 | オーバーフロー
+Resultado indefinido | Result is undefined | Resultado indefinido | Résultat non défini | Ergebnis nicht definiert | Risultato non definito | Wynik nieokreślony | Результат не определён | 정의되지 않은 결과 | 結果が定義されていません
+Temas y personalización (Ctrl+T) | Themes and customization (Ctrl+T) | Temas e personalização (Ctrl+T) | Thèmes et personnalisation (Ctrl+T) | Designs und Anpassung (Strg+T) | Temi e personalizzazione (Ctrl+T) | Motywy i personalizacja (Ctrl+T) | Темы и оформление (Ctrl+T) | 테마 및 사용자 지정 (Ctrl+T) | テーマとカスタマイズ (Ctrl+T)
+Siempre encima | Always on top | Sempre visível | Toujours au premier plan | Immer im Vordergrund | Sempre in primo piano | Zawsze na wierzchu | Поверх всех окон | 항상 위 | 常に手前に表示
+Siempre encima: activado (clic para desactivar) | Always on top: on (click to turn off) | Sempre visível: ativado (clique para desativar) | Toujours au premier plan : activé (cliquez pour désactiver) | Immer im Vordergrund: an (zum Ausschalten klicken) | Sempre in primo piano: attivo (clic per disattivare) | Zawsze na wierzchu: włączone (kliknij, aby wyłączyć) | Поверх всех окон: включено (нажмите, чтобы выключить) | 항상 위: 켜짐 (클릭하여 끄기) | 常に手前に表示: オン (クリックでオフ)
+Siempre encima: desactivado | Always on top: off | Sempre visível: desativado | Toujours au premier plan : désactivé | Immer im Vordergrund: aus | Sempre in primo piano: disattivo | Zawsze na wierzchu: wyłączone | Поверх всех окон: выключено | 항상 위: 꺼짐 | 常に手前に表示: オフ
+Minimizar | Minimize | Minimizar | Réduire | Minimieren | Riduci a icona | Minimalizuj | Свернуть | 최소화 | 最小化
+Cerrar | Close | Fechar | Fermer | Schließen | Chiudi | Zamknij | Закрыть | 닫기 | 閉じる
+Menú | Menu | Menu | Menu | Menü | Menu | Menu | Меню | 메뉴 | メニュー
+Estándar | Standard | Padrão | Standard | Standard | Standard | Standardowy | Обычный | 표준 | 標準
+Científica | Scientific | Científica | Scientifique | Wissenschaftlich | Scientifica | Naukowy | Инженерный | 공학용 | 関数電卓
+Historial (Ctrl+H) | History (Ctrl+H) | Histórico (Ctrl+H) | Historique (Ctrl+H) | Verlauf (Strg+H) | Cronologia (Ctrl+H) | Historia (Ctrl+H) | Журнал (Ctrl+H) | 기록 (Ctrl+H) | 履歴 (Ctrl+H)
+Historial | History | Histórico | Historique | Verlauf | Cronologia | Historia | Журнал | 기록 | 履歴
+Memoria | Memory | Memória | Mémoire | Speicher | Memoria | Pamięć | Память | 메모리 | メモリ
+Copiar | Copy | Copiar | Copier | Kopieren | Copia | Kopiuj | Копировать | 복사 | コピー
+Pegar | Paste | Colar | Coller | Einfügen | Incolla | Wklej | Вставить | 붙여넣기 | 貼り付け
+Borrar todo | Clear all | Limpar tudo | Tout effacer | Alles löschen | Cancella tutto | Wyczyść wszystko | Очистить всё | 모두 지우기 | すべてクリア
+Todavía no hay historial | There's no history yet | Ainda não há histórico | Pas encore d'historique | Noch kein Verlauf | Non c'è ancora cronologia | Brak historii | Журнал пока пуст | 아직 기록이 없습니다 | 履歴はまだありません
+No hay nada guardado en la memoria | There's nothing saved in memory | Não há nada salvo na memória | Rien n'est enregistré en mémoire | Im Speicher ist nichts gespeichert | Non c'è nulla in memoria | W pamięci nic nie zapisano | В памяти ничего нет | 메모리에 저장된 항목이 없습니다 | メモリに保存されたものはありません
+Calculadora | Calculator | Calculadora | Calculatrice | Rechner | Calcolatrice | Kalkulator | Калькулятор | 계산기 | 電卓
+Apariencia | Appearance | Aparência | Apparence | Darstellung | Aspetto | Wygląd | Внешний вид | 모양 | 外観
+Temas y personalización… | Themes and customization… | Temas e personalização… | Thèmes et personnalisation… | Designs und Anpassung… | Temi e personalizzazione… | Motywy i personalizacja… | Темы и оформление… | 테마 및 사용자 지정… | テーマとカスタマイズ…
+Icono de la barra con los colores del tema | Taskbar icon in the theme's colors | Ícone da barra com as cores do tema | Icône de la barre aux couleurs du thème | Taskleistensymbol in den Designfarben | Icona della barra con i colori del tema | Ikona paska w kolorach motywu | Значок панели в цветах темы | 테마 색상의 작업 표시줄 아이콘 | タスクバーのアイコンをテーマの色に
+Historial al lado (ventana ancha) | History on the side (wide window) | Histórico ao lado (janela larga) | Historique sur le côté (fenêtre large) | Verlauf seitlich (breites Fenster) | Cronologia a lato (finestra larga) | Historia z boku (szerokie okno) | Журнал сбоку (широкое окно) | 옆에 기록 표시 (넓은 창) | 履歴を横に表示 (幅の広いウィンドウ)
+Idioma | Language | Idioma | Langue | Sprache | Lingua | Język | Язык | 언어 | 言語
+Automático (idioma de Windows) | Automatic (Windows language) | Automático (idioma do Windows) | Automatique (langue de Windows) | Automatisch (Windows-Sprache) | Automatica (lingua di Windows) | Automatycznie (język systemu Windows) | Автоматически (язык Windows) | 자동 (Windows 언어) | 自動 (Windows の言語)
+Acerca de NeoCalc | About NeoCalc | Sobre o NeoCalc | À propos de NeoCalc | Über NeoCalc | Informazioni su NeoCalc | O programie NeoCalc | О программе NeoCalc | NeoCalc 정보 | NeoCalc について
+Calculadora estándar y científica con temas y personalización. | Standard and scientific calculator with themes and customization. | Calculadora padrão e científica com temas e personalização. | Calculatrice standard et scientifique avec thèmes et personnalisation. | Standard- und wissenschaftlicher Rechner mit Designs und Anpassung. | Calcolatrice standard e scientifica con temi e personalizzazione. | Kalkulator standardowy i naukowy z motywami i personalizacją. | Обычный и инженерный калькулятор с темами и настройкой оформления. | 테마와 사용자 지정 기능이 있는 표준 및 공학용 계산기. | テーマとカスタマイズに対応した標準・関数電卓。
+Atajos: Alt+1 / Alt+2 cambiar modo · Ctrl+T temas · Ctrl+H historial | Shortcuts: Alt+1 / Alt+2 switch mode · Ctrl+T themes · Ctrl+H history | Atalhos: Alt+1 / Alt+2 mudar de modo · Ctrl+T temas · Ctrl+H histórico | Raccourcis : Alt+1 / Alt+2 changer de mode · Ctrl+T thèmes · Ctrl+H historique | Tastenkürzel: Alt+1 / Alt+2 Modus wechseln · Strg+T Designs · Strg+H Verlauf | Scorciatoie: Alt+1 / Alt+2 cambia modalità · Ctrl+T temi · Ctrl+H cronologia | Skróty: Alt+1 / Alt+2 zmiana trybu · Ctrl+T motywy · Ctrl+H historia | Сочетания клавиш: Alt+1 / Alt+2 смена режима · Ctrl+T темы · Ctrl+H журнал | 바로 가기: Alt+1 / Alt+2 모드 전환 · Ctrl+T 테마 · Ctrl+H 기록 | ショートカット: Alt+1 / Alt+2 モード切替 · Ctrl+T テーマ · Ctrl+H 履歴
+Ctrl+M/R/P/Q/L memoria (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ raíz · Q x² | Ctrl+M/R/P/Q/L memory (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ square root · Q x² | Ctrl+M/R/P/Q/L memória (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ raiz · Q x² | Ctrl+M/R/P/Q/L mémoire (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ racine · Q x² | Strg+M/R/P/Q/L Speicher (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ Wurzel · Q x² | Ctrl+M/R/P/Q/L memoria (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ radice · Q x² | Ctrl+M/R/P/Q/L pamięć (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ pierwiastek · Q x² | Ctrl+M/R/P/Q/L память (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ корень · Q x² | Ctrl+M/R/P/Q/L 메모리 (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ 제곱근 · Q x² | Ctrl+M/R/P/Q/L メモリ (MS, MR, M+, M−, MC) · F9 +/− · R 1/x · @ 平方根 · Q x²
+Ajustes y temas propios en: | Settings and your themes are stored in: | Configurações e temas próprios em: | Réglages et thèmes personnels dans : | Einstellungen und eigene Designs in: | Impostazioni e temi personali in: | Ustawienia i własne motywy w: | Настройки и свои темы хранятся в: | 설정 및 사용자 테마 위치: | 設定と自作テーマの保存場所:
+NeoCalc · Temas y personalización | NeoCalc · Themes and customization | NeoCalc · Temas e personalização | NeoCalc · Thèmes et personnalisation | NeoCalc · Designs und Anpassung | NeoCalc · Temi e personalizzazione | NeoCalc · Motywy i personalizacja | NeoCalc · Темы и оформление | NeoCalc · 테마 및 사용자 지정 | NeoCalc · テーマとカスタマイズ
+Temas | Themes | Temas | Thèmes | Designs | Temi | Motywy | Темы | 테마 | テーマ
+Elige uno para aplicarlo. Para personalizar, cambia lo que quieras a la derecha. | Pick one to apply it. To customize, change anything you like on the right. | Escolha um para aplicá-lo. Para personalizar, altere o que quiser à direita. | Choisissez-en un pour l'appliquer. Pour personnaliser, modifiez ce que vous voulez à droite. | Wählen Sie eines aus, um es anzuwenden. Zum Anpassen rechts beliebig ändern. | Scegline uno per applicarlo. Per personalizzare, cambia ciò che vuoi a destra. | Wybierz jeden, aby go zastosować. Aby dostosować, zmień dowolne opcje po prawej. | Выберите тему, чтобы применить её. Чтобы настроить, меняйте что угодно справа. | 적용할 테마를 선택하세요. 오른쪽에서 원하는 항목을 바꿔 사용자 지정할 수 있습니다. | 選ぶと適用されます。右側で好きな項目を変更してカスタマイズできます。
+Mis temas | My themes | Meus temas | Mes thèmes | Meine Designs | I miei temi | Moje motywy | Мои темы | 내 테마 | マイテーマ
+Incluidos | Built-in | Incluídos | Inclus | Integriert | Inclusi | Wbudowane | Встроенные | 기본 제공 | 内蔵
+Aleatorio | Random | Aleatório | Aléatoire | Zufällig | Casuale | Losowy | Случайная | 무작위 | ランダム
+Importar… | Import… | Importar… | Importer… | Importieren… | Importa… | Importuj… | Импорт… | 가져오기… | インポート…
+Duplicar | Duplicate | Duplicar | Dupliquer | Duplizieren | Duplica | Duplikuj | Дублировать | 복제 | 複製
+Exportar… | Export… | Exportar… | Exporter… | Exportieren… | Esporta… | Eksportuj… | Экспорт… | 내보내기… | エクスポート…
+Eliminar | Delete | Excluir | Supprimer | Löschen | Elimina | Usuń | Удалить | 삭제 | 削除
+Aún no tienes temas propios: edita uno o pulsa «Aleatorio». | You don't have any themes of your own yet: edit one or press "Random". | Você ainda não tem temas próprios: edite um ou clique em "Aleatório". | Vous n'avez pas encore de thème personnel : modifiez-en un ou cliquez sur « Aléatoire ». | Noch keine eigenen Designs: Bearbeiten Sie eines oder klicken Sie auf „Zufällig“. | Non hai ancora temi personali: modificane uno o premi «Casuale». | Nie masz jeszcze własnych motywów: edytuj jeden lub kliknij „Losowy”. | Своих тем пока нет: измените любую или нажмите «Случайная». | 아직 내 테마가 없습니다. 테마를 편집하거나 "무작위"를 누르세요. | 自作テーマはまだありません。テーマを編集するか「ランダム」を押してください。
+Personalizar | Customize | Personalizar | Personnaliser | Anpassen | Personalizza | Dostosuj | Настройка | 사용자 지정 | カスタマイズ
+Es un tema incluido: al cambiar cualquier cosa se crea una copia en «Mis temas» y el original queda intacto. | This is a built-in theme: changing anything creates a copy in "My themes" and leaves the original untouched. | É um tema incluído: ao alterar qualquer coisa, uma cópia é criada em "Meus temas" e o original não é modificado. | C'est un thème inclus : toute modification crée une copie dans « Mes thèmes » et l'original reste intact. | Integriertes Design: Jede Änderung erstellt eine Kopie unter „Meine Designs“, das Original bleibt unverändert. | È un tema incluso: modificando qualsiasi cosa si crea una copia in «I miei temi» e l'originale resta intatto. | To motyw wbudowany: każda zmiana tworzy kopię w „Moje motywy”, a oryginał pozostaje bez zmian. | Это встроенная тема: при любом изменении создаётся копия в «Мои темы», а оригинал не меняется. | 기본 제공 테마입니다. 무엇이든 바꾸면 "내 테마"에 사본이 만들어지고 원본은 그대로 유지됩니다. | 内蔵テーマです。変更すると「マイテーマ」にコピーが作成され、元のテーマはそのまま残ります。
+Fondo de la ventana | Window background | Fundo da janela | Arrière-plan de la fenêtre | Fensterhintergrund | Sfondo della finestra | Tło okna | Фон окна | 창 배경 | ウィンドウの背景
+Color de arriba | Top color | Cor de cima | Couleur du haut | Farbe oben | Colore in alto | Kolor górny | Цвет сверху | 위쪽 색 | 上の色
+Color de abajo | Bottom color | Cor de baixo | Couleur du bas | Farbe unten | Colore in basso | Kolor dolny | Цвет снизу | 아래쪽 색 | 下の色
+Ángulo del degradado | Gradient angle | Ângulo do degradê | Angle du dégradé | Verlaufswinkel | Angolo della sfumatura | Kąt gradientu | Угол градиента | 그라데이션 각도 | グラデーションの角度
+Imagen de fondo | Background image | Imagem de fundo | Image d'arrière-plan | Hintergrundbild | Immagine di sfondo | Obraz tła | Фоновое изображение | 배경 이미지 | 背景画像
+Opacidad de la imagen | Image opacity | Opacidade da imagem | Opacité de l'image | Bilddeckkraft | Opacità dell'immagine | Krycie obrazu | Непрозрачность изображения | 이미지 불투명도 | 画像の不透明度
+Opacidad de la ventana | Window opacity | Opacidade da janela | Opacité de la fenêtre | Fensterdeckkraft | Opacità della finestra | Krycie okna | Непрозрачность окна | 창 불투명도 | ウィンドウの不透明度
+Esquinas de la ventana | Window corners | Cantos da janela | Coins de la fenêtre | Fensterecken | Angoli della finestra | Narożniki okna | Углы окна | 창 모서리 | ウィンドウの角
+Pantalla y textos | Display and text | Visor e textos | Écran et textes | Anzeige und Texte | Display e testi | Wyświetlacz i teksty | Дисплей и текст | 디스플레이 및 텍스트 | ディスプレイと文字
+Fondo de la pantalla | Display background | Fundo do visor | Fond de l'écran | Anzeigehintergrund | Sfondo del display | Tło wyświetlacza | Фон дисплея | 디스플레이 배경 | ディスプレイの背景
+Números de la pantalla | Display digits | Números do visor | Chiffres de l'écran | Ziffern der Anzeige | Cifre del display | Cyfry wyświetlacza | Цифры дисплея | 디스플레이 숫자 | ディスプレイの数字
+Texto (título, menús) | Text (title, menus) | Texto (título, menus) | Texte (titre, menus) | Text (Titel, Menüs) | Testo (titolo, menu) | Tekst (tytuł, menu) | Текст (заголовок, меню) | 텍스트 (제목, 메뉴) | 文字 (タイトル、メニュー)
+Texto secundario | Secondary text | Texto secundário | Texte secondaire | Sekundärer Text | Testo secondario | Tekst pomocniczy | Дополнительный текст | 보조 텍스트 | 補助テキスト
+Fuente de la pantalla | Display font | Fonte do visor | Police de l'écran | Schriftart der Anzeige | Carattere del display | Czcionka wyświetlacza | Шрифт дисплея | 디스플레이 글꼴 | ディスプレイのフォント
+Grosor de la fuente | Font weight | Espessura da fonte | Graisse de la police | Schriftstärke | Spessore del carattere | Grubość czcionki | Насыщенность шрифта | 글꼴 두께 | フォントの太さ
+Marco tipo LCD (calculadora clásica) | LCD frame (classic calculator) | Moldura LCD (calculadora clássica) | Cadre LCD (calculatrice classique) | LCD-Rahmen (klassischer Rechner) | Cornice LCD (calcolatrice classica) | Ramka LCD (klasyczny kalkulator) | Рамка LCD (классический калькулятор) | LCD 테두리 (클래식 계산기) | 液晶風の枠 (クラシック電卓)
+Teclas | Keys | Teclas | Touches | Tasten | Tasti | Klawisze | Клавиши | 키 | キー
+Números | Numbers | Números | Chiffres | Ziffern | Numeri | Cyfry | Цифры | 숫자 | 数字
+Texto de los números | Number text | Texto dos números | Texte des chiffres | Ziffern-Text | Testo dei numeri | Tekst cyfr | Текст цифр | 숫자 텍스트 | 数字の文字色
+Funciones (%, CE, x²…) | Functions (%, CE, x²…) | Funções (%, CE, x²…) | Fonctions (%, CE, x²…) | Funktionen (%, CE, x²…) | Funzioni (%, CE, x²…) | Funkcje (%, CE, x²…) | Функции (%, CE, x²…) | 함수 (%, CE, x²…) | 関数 (%, CE, x²…)
+Texto de las funciones | Function text | Texto das funções | Texte des fonctions | Funktions-Text | Testo delle funzioni | Tekst funkcji | Текст функций | 함수 텍스트 | 関数の文字色
+Operadores (+ − × ÷) | Operators (+ − × ÷) | Operadores (+ − × ÷) | Opérateurs (+ − × ÷) | Operatoren (+ − × ÷) | Operatori (+ − × ÷) | Operatory (+ − × ÷) | Операторы (+ − × ÷) | 연산자 (+ − × ÷) | 演算子 (+ − × ÷)
+Texto de los operadores | Operator text | Texto dos operadores | Texte des opérateurs | Operatoren-Text | Testo degli operatori | Tekst operatorów | Текст операторов | 연산자 텍스트 | 演算子の文字色
+Tecla igual | Equals key | Tecla igual | Touche égal | Ist-gleich-Taste | Tasto uguale | Klawisz równa się | Клавиша «равно» | 등호 키 | イコールキー
+Texto de la tecla igual | Equals key text | Texto da tecla igual | Texte de la touche égal | Text der Ist-gleich-Taste | Testo del tasto uguale | Tekst klawisza równa się | Текст клавиши «равно» | 등호 키 텍스트 | イコールキーの文字色
+Fuente de las teclas | Key font | Fonte das teclas | Police des touches | Schriftart der Tasten | Carattere dei tasti | Czcionka klawiszy | Шрифт клавиш | 키 글꼴 | キーのフォント
+Tamaño del texto | Text size | Tamanho do texto | Taille du texte | Textgröße | Dimensione del testo | Rozmiar tekstu | Размер текста | 텍스트 크기 | 文字サイズ
+Forma y efectos | Shape and effects | Forma e efeitos | Forme et effets | Form und Effekte | Forma ed effetti | Kształt i efekty | Форма и эффекты | 모양 및 효과 | 形と効果
+Redondeo de las teclas (máx = redondas) | Key rounding (max = round) | Arredondamento das teclas (máx = redondas) | Arrondi des touches (max = rondes) | Tastenrundung (max = rund) | Arrotondamento dei tasti (max = rotondi) | Zaokrąglenie klawiszy (maks. = okrągłe) | Скругление клавиш (макс. = круглые) | 키 둥글기 (최대 = 원형) | キーの丸み (最大 = 円形)
+Separación entre teclas | Key spacing | Espaço entre teclas | Espacement des touches | Tastenabstand | Spaziatura tra i tasti | Odstęp między klawiszami | Расстояние между клавишами | 키 간격 | キーの間隔
+Borde de las teclas | Key border | Borda das teclas | Bordure des touches | Tastenrahmen | Bordo dei tasti | Obramowanie klawiszy | Обводка клавиш | 키 테두리 | キーの枠線
+Grosor del borde | Border width | Espessura da borda | Épaisseur de la bordure | Rahmenstärke | Spessore del bordo | Grubość obramowania | Толщина обводки | 테두리 두께 | 枠線の太さ
+Brillo neón | Neon glow | Brilho neon | Lueur néon | Neonleuchten | Bagliore neon | Poświata neonowa | Неоновое свечение | 네온 광채 | ネオンの輝き
+Color de acento | Accent color | Cor de destaque | Couleur d'accentuation | Akzentfarbe | Colore di accento | Kolor akcentu | Акцентный цвет | 강조 색 | アクセントカラー
+mío | mine | meu | à moi | meins | mio | mój | мой | 내 것 | 自分用
+copia | copy | cópia | copie | Kopie | copia | kopia | копия | 사본 | コピー
+Transparente | Transparent | Transparente | Transparent | Transparent | Trasparente | Przezroczysty | Прозрачный | 투명 | 透明
+redondas | round | redondas | rondes | rund | rotondi | okrągłe | круглые | 원형 | 円形
+Muy fina | Thin | Muito fina | Très fine | Sehr dünn | Molto sottile | Bardzo cienka | Очень тонкий | 아주 가늘게 | 極細
+Fina | Light | Fina | Fine | Dünn | Sottile | Cienka | Тонкий | 가늘게 | 細字
+Semifina | Semilight | Semifina | Semi-fine | Halbdünn | Semisottile | Półcienka | Полутонкий | 약간 가늘게 | やや細字
+Normal | Normal | Normal | Normale | Normal | Normale | Normalna | Обычный | 보통 | 標準
+Media | Medium | Média | Moyenne | Mittel | Media | Średnia | Средний | 중간 | 中字
+Seminegrita | Semibold | Seminegrito | Demi-gras | Halbfett | Semigrassetto | Półgruba | Полужирный | 약간 굵게 | やや太字
+Negrita | Bold | Negrito | Gras | Fett | Grassetto | Gruba | Жирный | 굵게 | 太字
+Muy negrita | Black | Muito negrito | Très gras | Extrafett | Nero | Bardzo gruba | Очень жирный | 아주 굵게 | 極太
+ninguna | none | nenhuma | aucune | keines | nessuna | brak | нет | 없음 | なし
+Elegir… | Choose… | Escolher… | Choisir… | Auswählen… | Scegli… | Wybierz… | Выбрать… | 선택… | 選択…
+Quitar | Remove | Remover | Retirer | Entfernen | Rimuovi | Usuń | Убрать | 제거 | 削除
+Imágenes | Images | Imagens | Images | Bilder | Immagini | Obrazy | Изображения | 이미지 | 画像
+Todos | All files | Todos | Tous | Alle | Tutti | Wszystkie | Все | 모두 | すべて
+Los temas incluidos no se pueden eliminar. | Built-in themes can't be deleted. | Os temas incluídos não podem ser excluídos. | Les thèmes inclus ne peuvent pas être supprimés. | Integrierte Designs können nicht gelöscht werden. | I temi inclusi non si possono eliminare. | Nie można usuwać motywów wbudowanych. | Встроенные темы нельзя удалить. | 기본 제공 테마는 삭제할 수 없습니다. | 内蔵テーマは削除できません。
+¿Eliminar el tema «{0}»? | Delete the theme "{0}"? | Excluir o tema "{0}"? | Supprimer le thème « {0} » ? | Design „{0}“ löschen? | Eliminare il tema «{0}»? | Usunąć motyw „{0}”? | Удалить тему «{0}»? | "{0}" 테마를 삭제할까요? | テーマ「{0}」を削除しますか?
+Tema de NeoCalc | NeoCalc theme | Tema do NeoCalc | Thème NeoCalc | NeoCalc-Design | Tema di NeoCalc | Motyw NeoCalc | Тема NeoCalc | NeoCalc 테마 | NeoCalc テーマ
+Exportar tema | Export theme | Exportar tema | Exporter le thème | Design exportieren | Esporta tema | Eksportuj motyw | Экспорт темы | 테마 내보내기 | テーマのエクスポート
+Importar tema | Import theme | Importar tema | Importer un thème | Design importieren | Importa tema | Importuj motyw | Импорт темы | 테마 가져오기 | テーマのインポート
+No se pudo exportar: {0} | Couldn't export: {0} | Não foi possível exportar: {0} | Échec de l'exportation : {0} | Export fehlgeschlagen: {0} | Impossibile esportare: {0} | Nie udało się wyeksportować: {0} | Не удалось экспортировать: {0} | 내보내지 못했습니다: {0} | エクスポートできませんでした: {0}
+Opacidad | Opacity | Opacidade | Opacité | Deckkraft | Opacità | Krycie | Непрозрачность | 불투명도 | 不透明度
+Windows oscuro | Windows dark | Windows escuro | Windows sombre | Windows dunkel | Windows scuro | Windows ciemny | Windows тёмная | Windows 어둡게 | Windows ダーク
+Windows claro | Windows light | Windows claro | Windows clair | Windows hell | Windows chiaro | Windows jasny | Windows светлая | Windows 밝게 | Windows ライト
+Neón cyber | Cyber neon | Neon cyber | Néon cyber | Cyber-Neon | Neon cyber | Cyber neon | Кибер-неон | 사이버 네온 | サイバーネオン
+LCD retro | Retro LCD | LCD retrô | LCD rétro | Retro-LCD | LCD retrò | Retro LCD | Ретро-LCD | 레트로 LCD | レトロ液晶
+Terminal ámbar | Amber terminal | Terminal âmbar | Terminal ambre | Bernstein-Terminal | Terminale ambra | Bursztynowy terminal | Янтарный терминал | 앰버 터미널 | アンバー端末
+Drácula | Dracula | Drácula | Dracula | Dracula | Dracula | Dracula | Дракула | 드라큘라 | ドラキュラ
+Nórdico | Nordic | Nórdico | Nordique | Nordisch | Nordico | Nordycki | Северная | 노르딕 | ノルディック
+Solarizado | Solarized | Solarizado | Solarisé | Solarized | Solarizzato | Solarized | Соляризация | 솔라라이즈드 | ソーラライズド
+Océano profundo | Deep ocean | Oceano profundo | Océan profond | Tiefsee | Oceano profondo | Głęboki ocean | Глубокий океан | 깊은 바다 | 深海
+Atardecer | Sunset | Pôr do sol | Coucher de soleil | Sonnenuntergang | Tramonto | Zachód słońca | Закат | 일몰 | 夕焼け
+Bosque | Forest | Floresta | Forêt | Wald | Foresta | Las | Лес | 숲 | 森
+Lava | Lava | Lava | Lave | Lava | Lava | Lawa | Лава | 용암 | 溶岩
+Hielo | Ice | Gelo | Glace | Eis | Ghiaccio | Lód | Лёд | 얼음 | 氷
+Rosa pastel | Pastel pink | Rosa pastel | Rose pastel | Pastellrosa | Rosa pastello | Pastelowy róż | Пастельно-розовая | 파스텔 핑크 | パステルピンク
+Oro y negro | Gold and black | Ouro e preto | Or et noir | Gold und Schwarz | Oro e nero | Złoto i czerń | Золото и чёрный | 골드 & 블랙 | ゴールド&ブラック
+Cristal | Glass | Vidro | Verre | Glas | Vetro | Szkło | Стекло | 유리 | ガラス
+Redonda (estilo iPhone) | Round (iPhone style) | Redonda (estilo iPhone) | Ronde (style iPhone) | Rund (iPhone-Stil) | Rotonda (stile iPhone) | Okrągła (styl iPhone) | Круглая (в стиле iPhone) | 원형 (iPhone 스타일) | 丸型 (iPhone 風)
+Holograma | Hologram | Holograma | Hologramme | Hologramm | Ologramma | Hologram | Голограмма | 홀로그램 | ホログラム
+Papel | Paper | Papel | Papier | Papier | Carta | Papier | Бумага | 종이 | 紙
+Alto contraste | High contrast | Alto contraste | Contraste élevé | Hoher Kontrast | Contrasto elevato | Wysoki kontrast | Высокая контрастность | 고대비 | ハイコントラスト
+Café | Coffee | Café | Café | Kaffee | Caffè | Kawa | Кофе | 커피 | コーヒー
