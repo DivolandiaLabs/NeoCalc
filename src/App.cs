@@ -21,6 +21,7 @@ namespace NeoCalc
             if (args.Length == 2 && args[0] == "/prueba") { File.WriteAllText(args[1], Pruebas.Ejecutar(), Encoding.UTF8); return 0; }
             if (args.Length >= 4 && args[0] == "/captura") { Captura(args[1], args[2] == "cientifica", args[3], args.Length > 4 ? args[4] : null); return 0; }
             if (args.Length == 2 && args[0] == "/galeria") { Galeria(args[1]); return 0; }
+            if (args.Length == 2 && args[0] == "/capturatamanos") { CapturaTamanos(args[1]); return 0; }
             if (args.Length == 2 && args[0] == "/capturatemas")
             {
                 Config ct = new Config(); ct.Tema = "synthwave"; ct.Historial = new List<string[]>();
@@ -94,6 +95,56 @@ namespace NeoCalc
         }
 
         static void Guardar(BitmapSource b, string png) { Icono.GuardarPng(b, png); }
+
+        // La calculadora a varios tamanos, con el asa de la esquina y el boton "Fijar este tamano" (para la web)
+        static void CapturaTamanos(string png)
+        {
+            double[] escalas = { 0.55, 0.8, 1.1 };
+            StackPanel fila = new StackPanel { Orientation = Orientation.Horizontal, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(30) };
+            for (int i = 0; i < escalas.Length; i++)
+            {
+                Config cfg = new Config(); cfg.Tema = "synthwave"; cfg.Historial = new List<string[]>();
+                VentanaCalc v = new VentanaCalc(cfg);
+                v.AnchoPrueba = 340;
+                foreach (string a in "1 2 3 + 4 5 =".Split(' ')) v.Ejecutar(a);
+                v.Construir();
+                FrameworkElement r = (FrameworkElement)v.Content;
+                v.Content = null;
+                r.Width = 320; r.Height = 520;
+                Grid caja = new Grid { Width = 340, Height = 540, VerticalAlignment = VerticalAlignment.Bottom };
+                caja.Children.Add(r);
+                if (i == escalas.Length - 1)
+                {
+                    Tema t = cfg.Buscar("synthwave");
+                    Color ca = Tema.C(t.Acento); ca.A = 255;
+                    System.Windows.Shapes.Path rayas = new System.Windows.Shapes.Path
+                    {
+                        Data = Geometry.Parse("M 17,6 L 6,17 M 17,10.5 L 10.5,17 M 17,15 L 15,17"),
+                        Stroke = new SolidColorBrush(ca), StrokeThickness = 1.8, StrokeStartLineCap = PenLineCap.Round, StrokeEndLineCap = PenLineCap.Round,
+                        HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Width = 22, Height = 22
+                    };
+                    caja.Children.Add(rayas);
+                    Border pill = new Border { HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(0, 0, 24, 24), CornerRadius = new CornerRadius(16), Padding = new Thickness(12, 7, 14, 7), Background = new SolidColorBrush(ca) };
+                    pill.Effect = new System.Windows.Media.Effects.DropShadowEffect { BlurRadius = 12, ShadowDepth = 2, Opacity = 0.45 };
+                    StackPanel sp = new StackPanel { Orientation = Orientation.Horizontal };
+                    sp.Children.Add(new TextBlock { Text = "\uE840", FontFamily = new FontFamily("Segoe Fluent Icons, Segoe MDL2 Assets"), FontSize = 13, Foreground = Brushes.White, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(0, 0, 8, 0) });
+                    sp.Children.Add(new TextBlock { Text = L.T("Fijar este tamaño"), FontSize = 13, FontWeight = FontWeights.SemiBold, Foreground = Brushes.White, VerticalAlignment = VerticalAlignment.Center, FontFamily = new FontFamily("Segoe UI Variable Text, Segoe UI") });
+                    pill.Child = sp;
+                    caja.Children.Add(pill);
+                }
+                caja.LayoutTransform = new ScaleTransform(escalas[i], escalas[i]);
+                fila.Children.Add(caja);
+                if (i < escalas.Length - 1)
+                    fila.Children.Add(new TextBlock { Text = "\u2192", FontSize = 34, Foreground = new SolidColorBrush(Color.FromRgb(0x5B, 0x64, 0x7A)), VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(14, 0, 14, 0) });
+            }
+            Border fondo = new Border { Background = new SolidColorBrush(Color.FromRgb(0x0A, 0x0D, 0x14)), Child = fila };
+            fondo.Measure(new Size(double.PositiveInfinity, double.PositiveInfinity));
+            Size t0 = fondo.DesiredSize;
+            fondo.Arrange(new Rect(0, 0, t0.Width, t0.Height)); fondo.UpdateLayout();
+            RenderTargetBitmap bmp = new RenderTargetBitmap((int)Math.Ceiling(t0.Width * 2), (int)Math.Ceiling(t0.Height * 2), 192, 192, PixelFormats.Pbgra32);
+            bmp.Render(fondo);
+            Guardar(bmp, png);
+        }
 
         // Todas las skins en una sola imagen
         static void Galeria(string png)

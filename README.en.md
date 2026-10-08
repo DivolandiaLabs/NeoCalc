@@ -24,6 +24,8 @@ round keys, neon glow, LCD display… A single `.exe` of about 200 KB, no instal
 
 ![The 26 built-in themes](docs/screenshots/en-galeria.png)
 
+![The calculator at several sizes with the Keep this size button](docs/screenshots/en-tamanos.png)
+
 ## Install
 
 1. Download `NeoCalc.exe` from the [releases page](https://github.com/DivolandiaLabs/NeoCalc/releases/latest).

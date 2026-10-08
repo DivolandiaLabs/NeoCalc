@@ -24,6 +24,8 @@
 
 ![26 種類の内蔵テーマ](docs/screenshots/en-galeria.png)
 
+![さまざまなサイズの電卓と「このサイズに固定」ボタン](docs/screenshots/en-tamanos.png)
+
 ## インストール
 
 1. [リリースページ](https://github.com/DivolandiaLabs/NeoCalc/releases/latest)から `NeoCalc.exe` をダウンロードします。

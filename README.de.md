@@ -24,6 +24,8 @@ runde Tasten, Neonleuchten, LCD-Anzeige… Eine einzige `.exe` mit etwa 200 KB, 
 
 ![Die 26 integrierten Designs](docs/screenshots/en-galeria.png)
 
+![Der Rechner in mehreren Größen mit der Schaltfläche Diese Größe behalten](docs/screenshots/en-tamanos.png)
+
 ## Installation
 
 1. Laden Sie `NeoCalc.exe` von der [Release-Seite](https://github.com/DivolandiaLabs/NeoCalc/releases/latest) herunter.

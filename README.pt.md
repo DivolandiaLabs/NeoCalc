@@ -24,6 +24,8 @@ teclas redondas, brilho neon, visor LCD… Um único `.exe` de cerca de 200 KB, 
 
 ![Os 26 temas incluídos](docs/screenshots/en-galeria.png)
 
+![A calculadora em vários tamanhos com o botão Fixar este tamanho](docs/screenshots/en-tamanos.png)
+
 ## Instalar
 
 1. Baixe `NeoCalc.exe` da [página de versões](https://github.com/DivolandiaLabs/NeoCalc/releases/latest).

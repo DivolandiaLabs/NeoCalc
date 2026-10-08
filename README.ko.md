@@ -24,6 +24,8 @@
 
 ![기본 제공 테마 26가지](docs/screenshots/en-galeria.png)
 
+![여러 크기의 계산기와 이 크기로 고정 버튼](docs/screenshots/en-tamanos.png)
+
 ## 설치
 
 1. [릴리스 페이지](https://github.com/DivolandiaLabs/NeoCalc/releases/latest)에서 `NeoCalc.exe`를 다운로드합니다.

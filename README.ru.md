@@ -24,6 +24,8 @@
 
 ![26 встроенных тем](docs/screenshots/en-galeria.png)
 
+![Калькулятор в нескольких размерах с кнопкой «Закрепить этот размер»](docs/screenshots/en-tamanos.png)
+
 ## Установка
 
 1. Скачайте `NeoCalc.exe` со [страницы релизов](https://github.com/DivolandiaLabs/NeoCalc/releases/latest).

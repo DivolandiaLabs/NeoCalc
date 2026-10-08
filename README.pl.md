@@ -24,6 +24,8 @@ okrągłe klawisze, neonowa poświata, wyświetlacz LCD… Jeden plik `.exe` o r
 
 ![26 wbudowanych motywów](docs/screenshots/en-galeria.png)
 
+![Kalkulator w kilku rozmiarach z przyciskiem Zachowaj ten rozmiar](docs/screenshots/en-tamanos.png)
+
 ## Instalacja
 
 1. Pobierz `NeoCalc.exe` ze [strony wydań](https://github.com/DivolandiaLabs/NeoCalc/releases/latest).
