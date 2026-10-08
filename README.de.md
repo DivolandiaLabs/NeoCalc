@@ -15,6 +15,7 @@ runde Tasten, Neonleuchten, LCD-Anzeige… Eine einzige `.exe` mit etwa 200 KB, 
 - **Standardmodus** genau wie der Windows-Rechner: Rechnungen werden verkettet (3 + 5 × 2 = 16), `=` wiederholt die letzte Rechnung und `%` verhält sich gleich.
 - **Wissenschaftlicher Modus** mit Operatorrangfolge und Klammern (3 + 5 × 2 = 13), `2nd`, DEG/RAD/GRAD, wissenschaftliche Notation (F-E), Trigonometrie, Logarithmen, Potenzen, Wurzeln, `n!` (auch mit Dezimalzahlen), `mod` und `exp`.
 - **Verlauf und Speicher** (MC, MR, M+, M−, MS): in einem Seitenbereich bei breitem Fenster oder über den Tasten bei schmalem.
+- **Beliebige Größe**: Ziehen Sie an der Ecke, und der ganze Rechner wird größer oder kleiner; mit **Diese Größe behalten** öffnet er sich immer so.
 - **Volle Tastaturbedienung**, Kopieren und Einfügen sowie die Schaltfläche **Immer im Vordergrund**.
 - **26 Designs**: Windows dunkel und hell, Cyber-Neon, Synthwave, Matrix, Retro-LCD, Bernstein-Terminal, Dracula, Nordisch, Game Boy, Hologramm, Glas, Rund (iPhone-Stil), Gold und Schwarz, Vaporwave…
 - **Design-Editor** mit Live-Vorschau, Farbwähler mit Transparenz, Schaltfläche **Zufällig** und **Import/Export** von Designs (`.neocalc.json`).

@@ -15,6 +15,7 @@ teclas redondas, brilho neon, visor LCD… Um único `.exe` de cerca de 200 KB, 
 - **Modo padrão** igual à calculadora do Windows: as operações se encadeiam (3 + 5 × 2 = 16), `=` repete a última operação e `%` funciona da mesma forma.
 - **Modo científico** com precedência de operadores e parênteses (3 + 5 × 2 = 13), `2nd`, DEG/RAD/GRAD, notação científica (F-E), trigonometria, logaritmos, potências, raízes, `n!` (também com decimais), `mod` e `exp`.
 - **Histórico e memória** (MC, MR, M+, M−, MS): num painel lateral se a janela for larga, ou sobre as teclas se for estreita.
+- **Do tamanho que quiser**: arraste o canto e toda a calculadora aumenta ou diminui; com **Fixar este tamanho** ela abrirá sempre assim.
 - **Teclado completo**, copiar e colar, e botão **Sempre visível**.
 - **26 temas**: Windows escuro e claro, Neon cyber, Synthwave, Matrix, LCD retrô, Terminal âmbar, Drácula, Nórdico, Game Boy, Holograma, Vidro, Redonda (estilo iPhone), Ouro e preto, Vaporwave…
 - **Editor de temas** com pré-visualização instantânea, seletor de cor com transparência, botão **Aleatório** e **importar/exportar** temas (`.neocalc.json`).

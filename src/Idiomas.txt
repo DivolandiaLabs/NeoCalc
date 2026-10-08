@@ -124,3 +124,9 @@ Holograma | Hologram | Holograma | Hologramme | Hologramm | Ologramma | Hologram
 Papel | Paper | Papel | Papier | Papier | Carta | Papier | Бумага | 종이 | 紙
 Alto contraste | High contrast | Alto contraste | Contraste élevé | Hoher Kontrast | Contrasto elevato | Wysoki kontrast | Высокая контрастность | 고대비 | ハイコントラスト
 Café | Coffee | Café | Café | Kaffee | Caffè | Kawa | Кофе | 커피 | コーヒー
+Abrir siempre con este tamaño | Always open at this size | Abrir sempre com este tamanho | Toujours ouvrir à cette taille | Immer in dieser Größe öffnen | Apri sempre con questa dimensione | Zawsze otwieraj w tym rozmiarze | Всегда открывать в этом размере | 항상 이 크기로 열기 | 常にこのサイズで開く
+Restablecer el tamaño | Reset size | Redefinir o tamanho | Réinitialiser la taille | Größe zurücksetzen | Ripristina la dimensione | Przywróć rozmiar | Сбросить размер | 크기 재설정 | サイズをリセット
+Fijar este tamaño | Keep this size | Fixar este tamanho | Garder cette taille | Diese Größe behalten | Mantieni questa dimensione | Zachowaj ten rozmiar | Закрепить этот размер | 이 크기로 고정 | このサイズに固定
+Se abrirá con {0} × {1} | Will open at {0} × {1} | Vai abrir com {0} × {1} | S'ouvrira en {0} × {1} | Öffnet mit {0} × {1} | Si aprirà a {0} × {1} | Otworzy się w rozmiarze {0} × {1} | Будет открываться в размере {0} × {1} | {0} × {1} 크기로 열립니다 | {0} × {1} で開きます
+Arrastra para cambiar el tamaño | Drag to resize | Arraste para redimensionar | Faites glisser pour redimensionner | Ziehen, um die Größe zu ändern | Trascina per ridimensionare | Przeciągnij, aby zmienić rozmiar | Перетащите, чтобы изменить размер | 끌어서 크기 조정 | ドラッグしてサイズを変更
+Tamaño | Size | Tamanho | Taille | Größe | Dimensione | Rozmiar | Размер | 크기 | サイズ

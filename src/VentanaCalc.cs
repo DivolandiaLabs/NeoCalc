@@ -135,7 +135,7 @@ namespace NeoCalc
             AllowsTransparency = true;
             Background = Brushes.Transparent;
             ResizeMode = ResizeMode.CanResize;
-            MinWidth = 300; MinHeight = 470;
+            MinWidth = 250; MinHeight = 380;
             Topmost = cfg.SiempreEncima;
             UseLayoutRounding = true;
             WindowChrome ch = new WindowChrome();
@@ -144,8 +144,8 @@ namespace NeoCalc
             ch.UseAeroCaptionButtons = false;
             WindowChrome.SetWindowChrome(this, ch);
 
-            Width = cfg.Cientifica ? cfg.AnchoCientifica : cfg.Ancho;
-            Height = cfg.Cientifica ? cfg.AltoCientifica : cfg.Alto;
+            Size inicial = TamanoAlAbrir(cfg.Cientifica);
+            Width = inicial.Width; Height = inicial.Height;
             if (cfg.X > -99000 && cfg.Y > -99000 && DentroDePantalla(cfg.X, cfg.Y))
             { WindowStartupLocation = WindowStartupLocation.Manual; Left = cfg.X; Top = cfg.Y; }
             else WindowStartupLocation = WindowStartupLocation.CenterScreen;
@@ -158,8 +158,9 @@ namespace NeoCalc
                 // identidad para la barra de tareas antes de que salga el boton (icono al anclar)
                 try { Barra.PrepararVentana(h, Barra.IconoParaBarra(Tema, Cfg.IconoDelTema)); } catch { }
                 if (Topmost) PonerEncima(true);
+                HwndSource.FromHwnd(h).AddHook(Mensajes);
             };
-            SizeChanged += delegate { ActualizarLateral(); };
+            SizeChanged += delegate { AplicarEscala(); ActualizarLateral(); };
             PreviewKeyDown += Tecla_Abajo;
             TextInput += Texto_Entrada;
             Closing += delegate { GuardarAhora(); if (ventanaTemas != null) ventanaTemas.Close(); };
@@ -229,7 +230,10 @@ namespace NeoCalc
         public void Construir()
         {
             teclas.Clear(); todas.Clear();
-            Content = ConstruirRaiz();
+            FrameworkElement raiz = ConstruirRaiz();
+            if (AnchoPrueba > 0) Content = raiz;
+            else Content = Envolver(raiz);
+            AplicarEscala();
             Opacity = Math.Max(0.3, Math.Min(1, Tema.Opacidad <= 0 ? 1 : Tema.Opacidad));
             PonerIcono();
             Refrescar();
@@ -287,6 +291,7 @@ namespace NeoCalc
             g.RowDefinitions.Add(new RowDefinition { Height = GridLength.Auto });                      // memoria
             g.RowDefinitions.Add(new RowDefinition { Height = new GridLength(Motor.Cientifica ? 4.6 : 3.4, GridUnitType.Star) }); // teclado
             fuera.Children.Add(g);
+            contenido = g;
 
             // --- barra de titulo (como la de Windows: franja con los botones de la ventana y debajo el modo)
             StackPanel titulo = new StackPanel { Background = Brushes.Transparent };
@@ -646,8 +651,8 @@ namespace NeoCalc
             Cfg.Cientifica = cientifica;
             Motor.Limpiar();
             segunda = false;
-            Width = cientifica ? Cfg.AnchoCientifica : Cfg.Ancho;
-            Height = cientifica ? Cfg.AltoCientifica : Cfg.Alto;
+            Size t = TamanoAlAbrir(cientifica);
+            Width = t.Width; Height = t.Height;
             Construir();
             GuardarLuego();
         }
@@ -800,12 +805,166 @@ namespace NeoCalc
 
         // ---------------------------------------------------------------- historial y memoria
 
+        // ---------------------------------------------------------------- tamano y escala
+
+        Grid contenido;            // todo lo de dentro de la ventana; se escala junto con ella
+        double escala = 1;
+        Border botonFijar;
+        DispatcherTimer ocultarFijar;
+        Size antesDeRedimensionar;
+
+        // Tamano "base" (el de la calculadora a escala 1, sin el margen de la sombra)
+        Size Base { get { return Motor.Cientifica ? new Size(380, 600) : new Size(320, 520); } }
+
+        double AnchoLogico
+        {
+            get
+            {
+                if (AnchoPrueba > 0) return AnchoPrueba;
+                return ActualWidth / (escala <= 0 ? 1 : escala);
+            }
+        }
+
+        // Al agrandar la ventana crece todo (teclas, numeros y textos); si solo se ensancha, sale el panel del historial
+        void AplicarEscala()
+        {
+            if (contenido == null) return;
+            double s = 1;
+            if (AnchoPrueba <= 0 && ActualWidth > 0)
+            {
+                double w = ActualWidth - 20, h = ActualHeight - 20;
+                s = Math.Min(w / Base.Width, h / Base.Height);
+                s = Math.Max(0.7, Math.Min(3, s));
+            }
+            if (Math.Abs(s - escala) < 0.002 && contenido.LayoutTransform is ScaleTransform) return;
+            escala = s;
+            contenido.LayoutTransform = Math.Abs(s - 1) < 0.002 ? Transform.Identity : new ScaleTransform(s, s);
+        }
+
+        Size TamanoAlAbrir(bool cientifica)
+        {
+            double w = cientifica ? Cfg.FijoAnchoCientifica : Cfg.FijoAncho;
+            double h = cientifica ? Cfg.FijoAltoCientifica : Cfg.FijoAlto;
+            if (w > 0 && h > 0) return new Size(w, h);
+            return cientifica ? new Size(Cfg.AnchoCientifica, Cfg.AltoCientifica) : new Size(Cfg.Ancho, Cfg.Alto);
+        }
+
+        bool TamanoFijado(bool cientifica) { return (cientifica ? Cfg.FijoAnchoCientifica : Cfg.FijoAncho) > 0; }
+
+        void FijarTamano()
+        {
+            if (Motor.Cientifica) { Cfg.FijoAnchoCientifica = Width; Cfg.FijoAltoCientifica = Height; }
+            else { Cfg.FijoAncho = Width; Cfg.FijoAlto = Height; }
+            GuardarAhora();
+            Aviso("\uE73E", L.F("Se abrirá con {0} × {1}", Math.Round(Width), Math.Round(Height)), null, 2500);
+        }
+
+        void QuitarTamanoFijo()
+        {
+            if (Motor.Cientifica) { Cfg.FijoAnchoCientifica = 0; Cfg.FijoAltoCientifica = 0; }
+            else { Cfg.FijoAncho = 0; Cfg.FijoAlto = 0; }
+            GuardarAhora();
+        }
+
+        void RestablecerTamano()
+        {
+            QuitarTamanoFijo();
+            Width = Motor.Cientifica ? 400 : 340;
+            Height = Motor.Cientifica ? 620 : 540;
+            GuardarAhora();
+        }
+
+        // Ventana = sombra/margen transparente + calculadora + asa de la esquina + aviso "Fijar este tamano"
+        FrameworkElement Envolver(FrameworkElement calc)
+        {
+            Grid w = new Grid();
+            // casi transparente: asi el margen tambien sirve para estirar desde los bordes
+            w.Background = new SolidColorBrush(Color.FromArgb(1, 0, 0, 0));
+            w.Children.Add(calc);
+
+            // asa para estirar (abajo a la derecha, en la esquina de fuera)
+            Grid asa = new Grid { Width = 22, Height = 22, HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Cursor = Cursors.SizeNWSE, Background = new SolidColorBrush(Color.FromArgb(1, 0, 0, 0)) };
+            asa.ToolTip = L.T("Arrastra para cambiar el tamaño");
+            Color ca = Tema.C(Tema.Acento); ca.A = 255;
+            System.Windows.Shapes.Path rayas = new System.Windows.Shapes.Path
+            {
+                Data = Geometry.Parse("M 17,6 L 6,17 M 17,10.5 L 10.5,17 M 17,15 L 15,17"),
+                Stroke = new SolidColorBrush(ca), StrokeThickness = 1.8, StrokeStartLineCap = PenLineCap.Round, StrokeEndLineCap = PenLineCap.Round,
+                Opacity = 0.55
+            };
+            asa.Children.Add(rayas);
+            asa.MouseEnter += delegate { rayas.Opacity = 1; };
+            asa.MouseLeave += delegate { rayas.Opacity = 0.55; };
+            asa.MouseLeftButtonDown += delegate (object s, MouseButtonEventArgs e)
+            {
+                e.Handled = true;
+                IntPtr h = new WindowInteropHelper(this).Handle;
+                ReleaseCapture();
+                SendMessage(h, 0x0112, new IntPtr(0xF008), IntPtr.Zero); // WM_SYSCOMMAND, SC_SIZE + abajo-derecha
+            };
+            w.Children.Add(asa);
+
+            // aviso que aparece al terminar de estirar
+            botonFijar = new Border { HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(0, 0, 24, 24), CornerRadius = new CornerRadius(16), Padding = new Thickness(12, 7, 14, 7), Visibility = Visibility.Collapsed, Cursor = Cursors.Hand };
+            botonFijar.Effect = new DropShadowEffect { BlurRadius = 12, ShadowDepth = 2, Opacity = 0.45 };
+            w.Children.Add(botonFijar);
+            return w;
+        }
+
+        // Muestra el aviso flotante; si accion != null es un boton
+        void Aviso(string glifo, string texto, Action accion, int ms)
+        {
+            if (botonFijar == null) return;
+            Color ca = Tema.C(Tema.Acento); ca.A = 255;
+            botonFijar.Background = new SolidColorBrush(ca);
+            Brush fg = Tema.Luz(ca) > 0.55 ? (Brush)new SolidColorBrush(Color.FromRgb(0x10, 0x12, 0x1C)) : Brushes.White;
+            StackPanel sp = new StackPanel { Orientation = Orientation.Horizontal };
+            sp.Children.Add(new TextBlock { Text = glifo, FontFamily = Iconos, FontSize = 13, Foreground = fg, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(0, 0, 8, 0) });
+            sp.Children.Add(new TextBlock { Text = texto, FontSize = 13, FontWeight = FontWeights.SemiBold, Foreground = fg, VerticalAlignment = VerticalAlignment.Center, FontFamily = new FontFamily("Segoe UI Variable Text, Segoe UI") });
+            botonFijar.Child = sp;
+            botonFijar.Tag = accion;
+            if (botonFijar.ToolTip == null)
+                Clic.En(botonFijar, delegate
+                {
+                    Action a = botonFijar.Tag as Action;
+                    botonFijar.Visibility = Visibility.Collapsed;
+                    if (a != null) a();
+                });
+            botonFijar.ToolTip = texto;
+            botonFijar.Visibility = Visibility.Visible;
+            if (ocultarFijar == null)
+            {
+                ocultarFijar = new DispatcherTimer();
+                ocultarFijar.Tick += delegate { ocultarFijar.Stop(); if (botonFijar != null && !botonFijar.IsMouseOver) botonFijar.Visibility = Visibility.Collapsed; else ocultarFijar.Start(); };
+            }
+            ocultarFijar.Stop();
+            ocultarFijar.Interval = TimeSpan.FromMilliseconds(ms);
+            ocultarFijar.Start();
+        }
+
+        IntPtr Mensajes(IntPtr hwnd, int msg, IntPtr wp, IntPtr lp, ref bool handled)
+        {
+            if (msg == 0x0231) antesDeRedimensionar = new Size(Width, Height);          // WM_ENTERSIZEMOVE
+            else if (msg == 0x0232)                                                       // WM_EXITSIZEMOVE
+            {
+                bool cambio = Math.Abs(antesDeRedimensionar.Width - Width) > 1 || Math.Abs(antesDeRedimensionar.Height - Height) > 1;
+                if (cambio)
+                {
+                    GuardarLuego();
+                    Aviso("\uE840", L.T("Fijar este tamaño"), delegate { FijarTamano(); }, 6000);
+                }
+            }
+            return IntPtr.Zero;
+        }
+
+        [DllImport("user32.dll")] static extern bool ReleaseCapture();
+        [DllImport("user32.dll")] static extern IntPtr SendMessage(IntPtr h, int msg, IntPtr wp, IntPtr lp);
+
         bool Ancha
         {
             get
             {
-                double w = AnchoPrueba > 0 ? AnchoPrueba : ActualWidth;
-                return w >= 600;
+                return AnchoLogico >= 600;
             }
         }
 
@@ -816,7 +975,7 @@ namespace NeoCalc
             if (lateral)
             {
                 if (sobreAbierto) CerrarSobre();
-                colDefLateral.Width = new GridLength(Math.Min(320, Math.Max(240, (AnchoPrueba > 0 ? AnchoPrueba : ActualWidth) * 0.38)));
+                colDefLateral.Width = new GridLength(Math.Min(320, Math.Max(240, AnchoLogico * 0.38)));
                 if (colLateral.Children.Count == 0) colLateral.Children.Add(PanelLista(false));
             }
             else
@@ -1000,6 +1159,8 @@ namespace NeoCalc
             sp.Children.Add(Cabecera(L.T("Apariencia")));
             sp.Children.Add(Opcion("", L.T("Temas y personalización…"), "Ctrl+T", false, delegate { AbrirTemas(); }));
             sp.Children.Add(Opcion("", L.T("Siempre encima"), null, Topmost, delegate { CambiarEncima(!Topmost); }));
+            sp.Children.Add(Opcion("\uE840", L.T("Abrir siempre con este tamaño"), null, TamanoFijado(Motor.Cientifica), delegate { if (TamanoFijado(Motor.Cientifica)) QuitarTamanoFijo(); else FijarTamano(); }));
+            sp.Children.Add(Opcion("\uE72C", L.T("Restablecer el tamaño"), null, false, delegate { RestablecerTamano(); }));
             sp.Children.Add(Opcion("", L.T("Icono de la barra con los colores del tema"), null, Cfg.IconoDelTema, delegate { Cfg.IconoDelTema = !Cfg.IconoDelTema; PonerIcono(); GuardarLuego(); }));
             sp.Children.Add(Opcion("", L.T("Historial al lado (ventana ancha)"), null, Cfg.PanelLateral, delegate { Cfg.PanelLateral = !Cfg.PanelLateral; ActualizarLateral(); GuardarLuego(); }));
             sp.Children.Add(Separador());

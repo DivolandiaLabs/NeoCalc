@@ -15,6 +15,7 @@ okrągłe klawisze, neonowa poświata, wyświetlacz LCD… Jeden plik `.exe` o r
 - **Tryb standardowy** dokładnie jak kalkulator Windows: działania są łączone po kolei (3 + 5 × 2 = 16), `=` powtarza ostatnie działanie, a `%` działa tak samo.
 - **Tryb naukowy** z kolejnością działań i nawiasami (3 + 5 × 2 = 13), `2nd`, DEG/RAD/GRAD, notacja naukowa (F-E), trygonometria, logarytmy, potęgi, pierwiastki, `n!` (także dla ułamków), `mod` i `exp`.
 - **Historia i pamięć** (MC, MR, M+, M−, MS): w panelu bocznym, gdy okno jest szerokie, lub nad klawiszami, gdy jest wąskie.
+- **Dowolny rozmiar**: przeciągnij róg, a cały kalkulator się powiększy lub zmniejszy; przycisk **Zachowaj ten rozmiar** sprawi, że zawsze będzie się tak otwierał.
 - **Pełna obsługa klawiatury**, kopiowanie i wklejanie oraz przycisk **Zawsze na wierzchu**.
 - **26 motywów**: Windows ciemny i jasny, Cyber neon, Synthwave, Matrix, Retro LCD, Bursztynowy terminal, Dracula, Nordycki, Game Boy, Hologram, Szkło, Okrągła (styl iPhone), Złoto i czerń, Vaporwave…
 - **Edytor motywów** z podglądem na żywo, próbnikiem kolorów z przezroczystością, przyciskiem **Losowy** oraz **importem/eksportem** motywów (`.neocalc.json`).
