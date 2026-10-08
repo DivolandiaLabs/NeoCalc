@@ -15,7 +15,7 @@ tasti rotondi, bagliore neon, display LCD… Un solo `.exe` di circa 200 KB, sen
 - **Modalità standard** identica alla calcolatrice di Windows: le operazioni si concatenano (3 + 5 × 2 = 16), `=` ripete l'ultima operazione e `%` funziona allo stesso modo.
 - **Modalità scientifica** con precedenza degli operatori e parentesi (3 + 5 × 2 = 13), `2nd`, DEG/RAD/GRAD, notazione scientifica (F-E), trigonometria, logaritmi, potenze, radici, `n!` (anche con decimali), `mod` ed `exp`.
 - **Cronologia e memoria** (MC, MR, M+, M−, MS): in un pannello laterale se la finestra è larga, o sopra i tasti se è stretta.
-- **Della dimensione che vuoi**: trascina l'angolo e tutta la calcolatrice si ingrandisce o si rimpicciolisce; con **Mantieni questa dimensione** si aprirà sempre così.
+- **Della dimensione che vuoi**: trascina l'angolo e tutta la calcolatrice si ingrandisce o si rimpicciolisce; la volta successiva si apre con l'ultima dimensione usata.
 - **Tastiera completa**, copia e incolla, e pulsante **Sempre in primo piano**.
 - **26 temi**: Windows scuro e chiaro, Neon cyber, Synthwave, Matrix, LCD retrò, Terminale ambra, Dracula, Nordico, Game Boy, Ologramma, Vetro, Rotonda (stile iPhone), Oro e nero, Vaporwave…
 - **Editor dei temi** con anteprima immediata, selettore di colore con trasparenza, pulsante **Casuale** e **importazione/esportazione** dei temi (`.neocalc.json`).
@@ -24,7 +24,7 @@ tasti rotondi, bagliore neon, display LCD… Un solo `.exe` di circa 200 KB, sen
 
 ![I 26 temi inclusi](docs/screenshots/en-galeria.png)
 
-![La calcolatrice in diverse dimensioni con il pulsante Mantieni questa dimensione](docs/screenshots/en-tamanos.png)
+![La calcolatrice in diverse dimensioni](docs/screenshots/en-tamanos.png)
 
 ## Installazione
 

@@ -15,7 +15,7 @@ round keys, neon glow, LCD display… A single `.exe` of about 200 KB, no instal
 - **Standard mode** exactly like the Windows calculator: operations chain (3 + 5 × 2 = 16), `=` repeats the last operation and `%` behaves the same.
 - **Scientific mode** with operator precedence and parentheses (3 + 5 × 2 = 13), `2nd`, DEG/RAD/GRAD, scientific notation (F-E), trigonometry, logarithms, powers, roots, `n!` (decimals too), `mod` and `exp`.
 - **History and memory** (MC, MR, M+, M−, MS): in a side panel when the window is wide, or over the keypad when it's narrow.
-- **Any size you like**: drag the corner and the whole calculator grows or shrinks; press **Keep this size** and it will always open that way.
+- **Any size you like**: drag the corner and the whole calculator grows or shrinks; next time it opens at the last size you left it.
 - **Full keyboard support**, copy and paste, and an **Always on top** button.
 - **26 themes**: Windows dark and light, Cyber neon, Synthwave, Matrix, Retro LCD, Amber terminal, Dracula, Nordic, Game Boy, Hologram, Glass, Round (iPhone style), Gold and black, Vaporwave…
 - **Theme editor** with live preview, a color picker with transparency, a **Random** button and theme **import/export** (`.neocalc.json`).
@@ -24,7 +24,7 @@ round keys, neon glow, LCD display… A single `.exe` of about 200 KB, no instal
 
 ![The 26 built-in themes](docs/screenshots/en-galeria.png)
 
-![The calculator at several sizes with the Keep this size button](docs/screenshots/en-tamanos.png)
+![The calculator at several sizes](docs/screenshots/en-tamanos.png)
 
 ## Install
 

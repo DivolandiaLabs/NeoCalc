@@ -96,7 +96,7 @@ namespace NeoCalc
 
         static void Guardar(BitmapSource b, string png) { Icono.GuardarPng(b, png); }
 
-        // La calculadora a varios tamanos, con el asa de la esquina y el boton "Fijar este tamano" (para la web)
+        // La calculadora a varios tamanos, con el asa de la esquina (para la web)
         static void CapturaTamanos(string png)
         {
             double[] escalas = { 0.55, 0.8, 1.1 };
@@ -124,13 +124,6 @@ namespace NeoCalc
                         HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Width = 22, Height = 22
                     };
                     caja.Children.Add(rayas);
-                    Border pill = new Border { HorizontalAlignment = HorizontalAlignment.Right, VerticalAlignment = VerticalAlignment.Bottom, Margin = new Thickness(0, 0, 24, 24), CornerRadius = new CornerRadius(16), Padding = new Thickness(12, 7, 14, 7), Background = new SolidColorBrush(ca) };
-                    pill.Effect = new System.Windows.Media.Effects.DropShadowEffect { BlurRadius = 12, ShadowDepth = 2, Opacity = 0.45 };
-                    StackPanel sp = new StackPanel { Orientation = Orientation.Horizontal };
-                    sp.Children.Add(new TextBlock { Text = "\uE840", FontFamily = new FontFamily("Segoe Fluent Icons, Segoe MDL2 Assets"), FontSize = 13, Foreground = Brushes.White, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(0, 0, 8, 0) });
-                    sp.Children.Add(new TextBlock { Text = L.T("Fijar este tamaño"), FontSize = 13, FontWeight = FontWeights.SemiBold, Foreground = Brushes.White, VerticalAlignment = VerticalAlignment.Center, FontFamily = new FontFamily("Segoe UI Variable Text, Segoe UI") });
-                    pill.Child = sp;
-                    caja.Children.Add(pill);
                 }
                 caja.LayoutTransform = new ScaleTransform(escalas[i], escalas[i]);
                 fila.Children.Add(caja);

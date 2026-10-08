@@ -352,7 +352,7 @@ namespace NeoCalc
         public string Angulo = "DEG";
         public double X = -99999, Y = -99999, Ancho = 340, Alto = 540;
         public double AnchoCientifica = 400, AltoCientifica = 620;
-        // tamano "fijado" con el que se abre la calculadora (0 = abrir con el ultimo tamano usado)
+        // version 1.2.0: tamano "fijado" al abrir (ya no se usa; se conserva para leer configuraciones antiguas)
         public double FijoAncho, FijoAlto, FijoAnchoCientifica, FijoAltoCientifica;
         public bool SiempreEncima;
         public bool IconoDelTema = true;
