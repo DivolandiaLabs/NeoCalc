@@ -233,6 +233,7 @@ namespace NeoCalc
             FrameworkElement raiz = ConstruirRaiz();
             if (AnchoPrueba > 0) Content = raiz;
             else Content = Envolver(raiz);
+            if (AnchoPrueba <= 0) { MinWidth = Math.Ceiling(Base.Width * EscalaMinima) + 20; MinHeight = Math.Ceiling(Base.Height * EscalaMinima) + 20; }
             AplicarEscala();
             Opacity = Math.Max(0.3, Math.Min(1, Tema.Opacidad <= 0 ? 1 : Tema.Opacidad));
             PonerIcono();
@@ -814,6 +815,9 @@ namespace NeoCalc
         Size antesDeRedimensionar;
 
         // Tamano "base" (el de la calculadora a escala 1, sin el margen de la sombra)
+        // lo mas pequena que puede quedar la calculadora (50 % del tamano normal)
+        const double EscalaMinima = 0.5;
+
         Size Base { get { return Motor.Cientifica ? new Size(380, 600) : new Size(320, 520); } }
 
         double AnchoLogico
@@ -834,7 +838,7 @@ namespace NeoCalc
             {
                 double w = ActualWidth - 20, h = ActualHeight - 20;
                 s = Math.Min(w / Base.Width, h / Base.Height);
-                s = Math.Max(0.7, Math.Min(3, s));
+                s = Math.Max(EscalaMinima, Math.Min(3, s));
             }
             if (Math.Abs(s - escala) < 0.002 && contenido.LayoutTransform is ScaleTransform) return;
             escala = s;
